@@ -1,59 +1,70 @@
-###Imports Base
-
-module NoFaces420time {
-}
-    imports {
-        Base
+###Imports Base###
+###Dont Touch###
+    module NoFaces420time {
     }
-item RollingForDummies
-{
-    DisplayName = Rolling For Dummies,
-    DisplayCategory = Literature,
-    Icon = Book,
-    NumberOfPages = 15,
-    TeachedRecipes = Joint Rolling,
-    Type = Literature,
-},
-item RollingPapers
-{
-    DisplayName = Rolling Papers,
-    DisplayCategory = Junk,
-    Type = Junk,
-    Icon = Rollingpaper,
-    Weight = 0.01,
-    EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:1,
-    Tags = Marijuana,
-},
-item PoorlyRolledJoint
-{
-    DisplayName = Poorly Rolled Joint
-    DisplayCategory = Medical
-    Type = Medical
-    Weight = 0.4
-    HungerChange = +15,
-    ThirstChange = +10,
-    BoredomChange = -15,
-    PainReduction = -2,
-    StressChange = -5,
-    UnhappyChange = -3,
-    Tags = Marijuana,
-    EvolvedRecipeName = PoorlyRolledJoint,
-},
-item RolledJoint
-{
-    DisplayName = Joint
-    DisplayCategory = Medical
-    Type = Medical
-    Weight = 0.4
-    HungerChange = +10,
-    ThirstChange = +7,
-    BoredomChange = -20,
-    PainReduction = -4,
-    StressChange = -10,
-    UnhappyChange = -6
-    Tags = Marijuana,
-    EvolvedRecipeName = RolledJoint,
-},
+        imports {
+            Base
+        }
+
+### WIP SECTION IGNORE FOR NOW ###
+###item RollingForDummies
+###{
+###    DisplayName = Rolling For Dummies,
+###    DisplayCategory = Literature,
+###    Icon = Book,
+###    NumberOfPages = 15,
+###    TeachedRecipes = Joint Rolling,
+###    Type = Literature,
+###},
+
+### ITEMS FOR CRAFTING VARIOUS RECIPES ###
+### THESE USE THE EVOLVEDRECIPE VARIABLE ###
+### YOU MUST DEFINE YOUR EVOLVEDRECIPENAME VARIABLE IN OTHER ITEMS FOR THESE TO WORK ###
+
+    item RollingPapers
+    {
+        DisplayName = Rolling Papers,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = Rollingpaper,
+        Weight = 0.01,
+        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:1,
+        Tags = Marijuana,
+    },
+
+### ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE ###
+### BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE ###
+### PLEASE FOLLOW THE FORMAT! ###
+    item PoorlyRolledJoint
+    {
+        DisplayName = Poorly Rolled Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +15,
+        ThirstChange = +10,
+        BoredomChange = -15,
+        PainReduction = -2,
+        StressChange = -5,
+        UnhappyChange = -3,
+        Tags = Marijuana,
+        EvolvedRecipeName = PoorlyRolledJoint,
+    },
+    item RolledJoint
+    {
+        DisplayName = Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +10,
+        ThirstChange = +7,
+        BoredomChange = -20,
+        PainReduction = -4,
+        StressChange = -10,
+        UnhappyChange = -6
+        Tags = Marijuana,
+        EvolvedRecipeName = RolledJoint,
+    },
 ### Edible Marijuana Items ###
 ### Be Sure to also set Calories Etc for each item you add below, and follow the format! ###
 ### You can also use the EvolvedRecipeName Variable here to set a finished item made from cooking ###
@@ -73,8 +84,8 @@ item RolledJoint
         StressChange = -15,
         UnhappyChange = -10
     },
-### Marijuana Strains ###
-### You can add more strains here or other items if you wish! simply follow the format ###
+### MARIJUANA STRAINS ###
+### YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT ###
     item PurpleKush
     {
         DisplayName = Purple Kush,
