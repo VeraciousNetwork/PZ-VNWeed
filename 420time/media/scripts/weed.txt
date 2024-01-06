@@ -31,6 +31,17 @@
         EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:1,
         Tags = Marijuana,
     },
+    item WhiteOwlBluntWrap
+    {
+        DisplayName = White Owl Blunt Wrap,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = WhiteOwlWraps,
+        Weight = 0.01,
+        Tags = Marijuana,
+        EvolvedRecipe = RolledBlunt:1
+    },
+
 
 ### ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE ###
 ### BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE ###
@@ -65,6 +76,35 @@
         Tags = Marijuana,
         EvolvedRecipeName = RolledJoint,
     },
+    item WaterBottleBong
+    {
+        DisplayName = Water Bottle Bong,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = WaterBottleBong,
+        Weight = 0.02,
+        EvolvedRecipe = MilkyBongRip:1,
+        EvolvedRecipeName = WaterBottleBong,
+        Tags = Marijuana,
+    },
+
+        ### Creating Crafting Option for empty Bottle ###
+        item WaterBottle
+        {
+            EvolvedRecipe = WaterBottleBong:1,
+        },
+
+    item RolledBlunt
+    {
+        DisplayName = Rolled Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = RolledBlunt,
+        Tags = Marijuana,
+    }
+
 ### Edible Marijuana Items ###
 ### Be Sure to also set Calories Etc for each item you add below, and follow the format! ###
 ### You can also use the EvolvedRecipeName Variable here to set a finished item made from cooking ###
@@ -82,8 +122,23 @@
         BoredomChange = -50,
         PainReduction = -5,
         StressChange = -15,
-        UnhappyChange = -10
+        UnhappyChange = -10,
     },
+    item MilkyBongRip
+    {
+        DisplayName = Milky Bong Rip
+        DisplayCategory = Medical,
+        Type = Medical,
+        weight = 0.01,
+        Icon = WaterBottleBongFilled,
+        HungerChange = +9,
+        ThirstChange = +5,
+        BoredomChange = -26,
+        PainReduction = -10,
+        StressChange = -12,
+        UnhappyChange = -11,
+        EvolvedRecipeName = MilkyBongRip,
+    }
 ### MARIJUANA STRAINS ###
 ### YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT ###
     item PurpleKush
@@ -94,7 +149,7 @@
         weight = 0.35,
         Icon = Ziplockbag,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,
+        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,RolledBlunt:2,
     },
     item GreenCrack
     {
@@ -104,6 +159,6 @@
         Weight = 0.35,
         Icon = Ziplockbag2,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,
+        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,RolledBlunt:2,
     },
 
