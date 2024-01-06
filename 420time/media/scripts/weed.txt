@@ -7,15 +7,52 @@
         }
 
 /**  WIP SECTION IGNORE FOR NOW /**
-/** item RollingForDummies /**
+/** item MarijaunaCultivationForDummies /**
 /** {  /**
-/**    DisplayName = Rolling For Dummies, /**
+/**    DisplayName = Marijuana Cultivation For Dummies, /**
 /**    DisplayCategory = Literature, /**
 /**    Icon = Book, /**
 /**    NumberOfPages = 15, /**
-/**    TeachedRecipes = Joint Rolling, /**
+/**    TeachedRecipes = Marijuana Cultivation, /**
 /**    Type = Literature, /**
 /** }, /**
+/** item HempCultivationForDummies /**
+/** {  /**
+/**    DisplayName = Hemp Cultivation For Dummies, /**
+/**    DisplayCategory = Literature, /**
+/**    Icon = Book, /**
+/**    NumberOfPages = 15, /**
+/**    TeachedRecipes = Hemp Cultivation, /**
+/**    Type = Literature, /**
+/** }, /**
+/** item MarijaunaCloningForDummies /**
+/** {  /**
+/**    DisplayName = Marijuana Cloning For Dummies, /**
+/**    DisplayCategory = Literature, /**
+/**    Icon = Book, /**
+/**    NumberOfPages = 15, /**
+/**    TeachedRecipes = Marijuana Cloning, /**
+/**    Type = Literature, /**
+/** }, /**
+/** item MarijaunaGrowLightsForDummies /**
+/** {  /**
+/**    DisplayName = Marijuana Grow Lights For Dummies, /**
+/**    DisplayCategory = Literature, /**
+/**    Icon = Book, /**
+/**    NumberOfPages = 15, /**
+/**    TeachedRecipes = Marijuana Grow Lights, /**
+/**    Type = Literature, /**
+/** }, /**
+/** item SoilCompositionForDummies /**
+/** {  /**
+/**    DisplayName = Soil Composition For Dummies, /**
+/**    DisplayCategory = Literature, /**
+/**    Icon = Book, /**
+/**    NumberOfPages = 15, /**
+/**    TeachedRecipes = Soil Composition, /**
+/**    Type = Literature, /**
+/** }, /**
+
 
 /** ITEMS FOR CRAFTING VARIOUS RECIPES /**
 /** THESE USE THE EVOLVEDRECIPE VARIABLE /**
@@ -72,6 +109,9 @@
 /** ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE /**
 /** BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE /**
 /** PLEASE FOLLOW THE FORMAT! /**
+
+/** POOR JOINTS /**
+
     item PoorlyRolledGreenCrackJoint
     {
         DisplayName = Poorly Rolled Green Crack Joint
@@ -86,6 +126,7 @@
         UnhappyChange = -3,
         Tags = Marijuana,
         EvolvedRecipeName = PoorlyRolledGreenCrackJoint,
+        OnCreate = Marijuana.OnCreateNewPoorJointItem,
     },
     item PoorlyRolledPurpleKushJoint
     {
@@ -101,6 +142,7 @@
         UnhappyChange = -3,
         Tags = Marijuana,
         EvolvedRecipeName = PoorlyRolledPurpleKushJoint,
+        OnCreate = Marijuana.OnCreateNewPoorJointItem,
     },
     item PoorlyRolledNorthernLightsJoint
     {
@@ -116,7 +158,9 @@
         UnhappyChange = -3,
         Tags = Marijuana,
         EvolvedRecipeName = PoorlyRolledNorthernLightsJoint,
+        OnCreate = Marijuana.OnCreateNewPoorJointItem,
     },
+/** GOOD JOINTS /**
     item GreenCrackJoint
     {
         DisplayName = Green Crack Joint
@@ -131,6 +175,7 @@
         UnhappyChange = -6
         Tags = Marijuana,
         EvolvedRecipeName = GreenCrackJoint,
+        OnCreate = Marijuana.OnCreateNewGoodJointItem,
     },
     item PurpleKushJoint
     {
@@ -146,6 +191,7 @@
         UnhappyChange = -6
         Tags = Marijuana,
         EvolvedRecipeName = PurpleKushJoint,
+        OnCreate = Marijuana.OnCreateNewGoodJointItem,
     },
     item NorthernLightsJoint
     {
@@ -161,7 +207,9 @@
         UnhappyChange = -6
         Tags = Marijuana,
         EvolvedRecipeName = Northern Lights Joint,
+        OnCreate = Marijuana.OnCreateNewGoodJointItem,
     },
+/** BLUNTS /**
     item GreenCrackBlunt
     {
         DisplayName = Green Crack Blunt,
@@ -192,6 +240,7 @@
         EvolvedRecipeName = NorthernLightsBlunt,
         Tags = Marijuana,
     },
+/** BOWLS OF WEED /**
     item BowlOfGreenCrack
     {
         DisplayName = Fat Bowl of green crack,
@@ -201,6 +250,7 @@
         Weight = 0.04,
         EvolvedRecipeName = BowlOfGreencrack,
         Tags = Marijuana,
+        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
     },
     item BowlOfPurpleKush
     {
@@ -211,6 +261,7 @@
         Weight = 0.04,
         EvolvedRecipeName = BowlOfPurpleKush,
         Tags = Marijuana,
+        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
     },
     item BowlOfNorthernLights
     {
@@ -221,12 +272,14 @@
         Weight = 0.04,
         EvolvedRecipeName = BowlOfNorthernLights,
         Tags = Marijuana,
+        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
     }
 
 /** Edible Marijuana Items /**
 /** Be Sure to also set Calories Etc for each item you add below, and follow the format! /**
 /** You can also use the EvolvedRecipeName Variable here to set a finished item made from cooking /**
 /** Just be sure to use the EvolvedRecipe variable on the items you want to use to create it! /**
+
     item HashBrownies
     {
         DisplayName = Hash Brownies (100mg),
@@ -251,14 +304,15 @@
         Icon = WaterBottleBongFilled,
         HungerChange = +9,
         ThirstChange = +5,
-        BoredomChange = -26,
-        PainReduction = -10,
-        StressChange = -12,
-        UnhappyChange = -11,
+        BoredomChange = -50,
+        PainReduction = -20,
+        StressChange = -20,
+        UnhappyChange = -20,
         EvolvedRecipeName = MilkyBongRip,
     }
 /** MARIJUANA STRAINS /**
 /** YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT /**
+
     item PurpleKush
     {
         DisplayName = Purple Kush,
