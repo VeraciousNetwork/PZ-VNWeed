@@ -65,7 +65,7 @@
         Type = Junk,
         Icon = Rollingpaper,
         Weight = 0.01,
-        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:1,PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:1,PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:1,
+        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:1,PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:1,PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:1,PoorlyRolledPineappleExpressJoint:1,PineappleExpressJoint:1,
         Tags = Marijuana,
     },
     item WhiteOwlBluntWrap
@@ -76,7 +76,17 @@
         Icon = WhiteOwlWraps,
         Weight = 0.01,
         Tags = Marijuana,
-        EvolvedRecipe = GreenCrackBlunt:1, PurpleKushBlunt:1, NorthernLightsBlunt:1,
+        EvolvedRecipe = GreenCrackBlunt:1, PurpleKushBlunt:1, NorthernLightsBlunt:1, PineappleExpressBlunt:1,
+    },
+    item BackwoodsBluntWrap
+    {
+        DisplayName = Backwoods Blunt Wrap,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = BackwoodsWraps,
+        Weight = 0.01,
+        Tags = Marijuana,
+        EvolvedRecipe = GreenCrackBackwoodsBlunt:1, PurpleKushBackwoodsBlunt:1, NorthernLightsBackwoodsBlunt:1, PineappleExpressBackwoodsBlunt:1,
     },
     item WaterBottleBong
     {
@@ -103,8 +113,17 @@
         Type = Junk,
         Icon = Glassbowl,
         Weight = 0.03,
-        EvolvedRecipe = BowlOfGreenCrack:1, BowlOfPurpleKush:1, BowlOfNorthernLights:1
-    }
+        EvolvedRecipe = BowlOfGreenCrack:1, BowlOfPurpleKush:1, BowlOfNorthernLights:1, BowlOfPineappleExpress:1,
+    },
+    item GlassWaterPipe
+    {
+        DisplayName = Glass Water pipe,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = GlassWaterPipe,
+        Weight = 0.04,
+        EvolvedRecipe = BongOfGreenCrack:1, BongOfPurpleKush:1, BongOfNorthernLights:1, BongOfPineappleExpress:1,
+    },
 
 /** ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE /**
 /** BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE /**
@@ -160,6 +179,22 @@
         EvolvedRecipeName = PoorlyRolledNorthernLightsJoint,
         OnCreate = Marijuana.OnCreateNewPoorJointItem,
     },
+    item PoorlyRolledPineappleExpressJoint
+    {
+        DisplayName = Poorly Rolled Pineapple Express Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +15,
+        ThirstChange = +10,
+        BoredomChange = -15,
+        PainReduction = -2,
+        StressChange = -5,
+        UnhappyChange = -3,
+        Tags = Marijuana,
+        EvolvedRecipeName = PoorlyRolledPineappleExpressJoint,
+        OnCreate = Marijuana.OnCreateNewPoorJointItem,
+    },
 /** GOOD JOINTS /**
     item GreenCrackJoint
     {
@@ -206,7 +241,23 @@
         StressChange = -10,
         UnhappyChange = -6
         Tags = Marijuana,
-        EvolvedRecipeName = Northern Lights Joint,
+        EvolvedRecipeName = NorthernLightsJoint,
+        OnCreate = Marijuana.OnCreateNewGoodJointItem,
+    },
+    item PineappleExpressJoint
+    {
+        DisplayName = Pineapple Express Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +10,
+        ThirstChange = +7,
+        BoredomChange = -20,
+        PainReduction = -4,
+        StressChange = -10,
+        UnhappyChange = -6
+        Tags = Marijuana,
+        EvolvedRecipeName = PineappleExpressJoint,
         OnCreate = Marijuana.OnCreateNewGoodJointItem,
     },
 /** BLUNTS /**
@@ -219,7 +270,7 @@
         Weight = 0.01,
         EvolvedRecipeName = GreenCrackBlunt,
         Tags = Marijuana,
-    }
+    },
     item PurpleKushBlunt
     {
         DisplayName = Purple Kush Blunt,
@@ -238,6 +289,57 @@
         Icon = RolledBlunt,
         Weight = 0.01,
         EvolvedRecipeName = NorthernLightsBlunt,
+        Tags = Marijuana,
+    },
+    item PineappleExpressBlunt
+    {
+        DisplayName = Pineapple Express Backwoods Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = PineappleExpressBlunt,
+        Tags = Marijuana,
+    },
+/** BACKWOODS BLUNTS /**
+    item GreenCrackBackwoodsBlunt
+    {
+        DisplayName = Green Crack Backwoods Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = GreenCrackBackwoodsBlunt,
+        Tags = Marijuana,
+    },
+    item PurpleKushBackwoodsBlunt
+    {
+        DisplayName = Purple Kush Backwoods Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = PurpleKushBackwoodsBlunt,
+        Tags = Marijuana,
+    },
+    item NorthernLightsBackwoodsBlunt
+    {
+        DisplayName = Northern Lights Backwoods Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = NorthernLightsBackwoodsBlunt,
+        Tags = Marijuana,
+    },
+    item PineappleExpressBackwoodsBlunt
+    {
+        DisplayName = Pineapple Express Backwoods Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = PineappleExpressBackwoodsBlunt,
         Tags = Marijuana,
     },
 /** BOWLS OF WEED /**
@@ -273,7 +375,18 @@
         EvolvedRecipeName = BowlOfNorthernLights,
         Tags = Marijuana,
         OnCreate = Marijuana.OnCreateNewMarijuanaItem,
-    }
+    },
+    item BowlOfPineappleExpress
+    {
+        DisplayName = Fat Bowl of Pineapple Express,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = Bowlofgreen,
+        Weight = 0.04,
+        EvolvedRecipeName = BowlOfPineappleExpress,
+        Tags = Marijuana,
+        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
+    },
 
 /** Edible Marijuana Items /**
 /** Be Sure to also set Calories Etc for each item you add below, and follow the format! /**
@@ -309,7 +422,7 @@
         StressChange = -20,
         UnhappyChange = -20,
         EvolvedRecipeName = MilkyBongRip,
-    }
+    },
 /** MARIJUANA STRAINS /**
 /** YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT /**
 
@@ -321,7 +434,7 @@
         weight = 0.35,
         Icon = Ziplockbag,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:2,PurpleKushBlunt:2,BowlOfPurpleKush,
+        EvolvedRecipe = PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:2,PurpleKushBlunt:2,BowlOfPurpleKush:1,PurpleKushBackwoodsBlunt:4,
     },
     item GreenCrack
     {
@@ -331,7 +444,7 @@
         Weight = 0.35,
         Icon = Ziplockbag2,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:2,GreenCrackBlunt:2,BowlOfGreenCrack:1,
+        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:2,GreenCrackBlunt:2,BowlOfGreenCrack:1,GreenCrackBackwoodsBlunt:4,
     },
     item NorthernLights
     {
@@ -341,6 +454,16 @@
         Weight = 0.35,
         Icon = Ziplockbag3,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:2,NorthernLightsBlunt:2,BowlOfNorthernLights:1,
+        EvolvedRecipe = PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:2,NorthernLightsBlunt:2,BowlOfNorthernLights:1,NorthernLightsBackwoodsBlunt:4,
+    },
+    item PineappleExpress
+    {
+        DisplayName = Pineapple Express,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Weight = 0.35,
+        Icon = Ziplockbag4,
+        Tags = Marijuana,
+        EvolvedRecipe = PoorlyRolledPineappleExpressJoint:1;PineappleExpressJoint:2,PineappleExpressBlunt:2,BowlOfPineappleExpress:1,PineappleExpressBackwoodsBlunt:4,
     },
 
