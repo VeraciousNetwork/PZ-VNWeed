@@ -1,25 +1,25 @@
-###Imports Base###
-###Dont Touch###
+/**Imports Base/**
+/**Dont Touch/**
     module NoFaces420time {
     }
         imports {
             Base
         }
 
-### WIP SECTION IGNORE FOR NOW ###
-###item RollingForDummies
-###{
-###    DisplayName = Rolling For Dummies,
-###    DisplayCategory = Literature,
-###    Icon = Book,
-###    NumberOfPages = 15,
-###    TeachedRecipes = Joint Rolling,
-###    Type = Literature,
-###},
+/**  WIP SECTION IGNORE FOR NOW /**
+/** item RollingForDummies /**
+/** {  /**
+/**    DisplayName = Rolling For Dummies, /**
+/**    DisplayCategory = Literature, /**
+/**    Icon = Book, /**
+/**    NumberOfPages = 15, /**
+/**    TeachedRecipes = Joint Rolling, /**
+/**    Type = Literature, /**
+/** }, /**
 
-### ITEMS FOR CRAFTING VARIOUS RECIPES ###
-### THESE USE THE EVOLVEDRECIPE VARIABLE ###
-### YOU MUST DEFINE YOUR EVOLVEDRECIPENAME VARIABLE IN OTHER ITEMS FOR THESE TO WORK ###
+/** ITEMS FOR CRAFTING VARIOUS RECIPES /**
+/** THESE USE THE EVOLVEDRECIPE VARIABLE /**
+/** YOU MUST DEFINE YOUR EVOLVEDRECIPENAME VARIABLE IN OTHER ITEMS FOR THESE TO WORK /**
 
     item RollingPapers
     {
@@ -28,7 +28,7 @@
         Type = Junk,
         Icon = Rollingpaper,
         Weight = 0.01,
-        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:1,
+        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:1,PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:1,PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:1,
         Tags = Marijuana,
     },
     item WhiteOwlBluntWrap
@@ -39,42 +39,7 @@
         Icon = WhiteOwlWraps,
         Weight = 0.01,
         Tags = Marijuana,
-        EvolvedRecipe = RolledBlunt:1
-    },
-
-
-### ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE ###
-### BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE ###
-### PLEASE FOLLOW THE FORMAT! ###
-    item PoorlyRolledJoint
-    {
-        DisplayName = Poorly Rolled Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
-        HungerChange = +15,
-        ThirstChange = +10,
-        BoredomChange = -15,
-        PainReduction = -2,
-        StressChange = -5,
-        UnhappyChange = -3,
-        Tags = Marijuana,
-        EvolvedRecipeName = PoorlyRolledJoint,
-    },
-    item RolledJoint
-    {
-        DisplayName = Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
-        HungerChange = +10,
-        ThirstChange = +7,
-        BoredomChange = -20,
-        PainReduction = -4,
-        StressChange = -10,
-        UnhappyChange = -6
-        Tags = Marijuana,
-        EvolvedRecipeName = RolledJoint,
+        EvolvedRecipe = GreenCrackBlunt:1, PurpleKushBlunt:1, NorthernLightsBlunt:1,
     },
     item WaterBottleBong
     {
@@ -88,27 +53,180 @@
         Tags = Marijuana,
     },
 
-        ### Creating Crafting Option for empty Bottle ###
-        item WaterBottle
-        {
-            EvolvedRecipe = WaterBottleBong:1,
-        },
+                /** Creating Crafting Option for empty Bottle /**
+                item WaterBottle
+                {
+                    EvolvedRecipe = WaterBottleBong:1,
+                },
 
-    item RolledBlunt
+    item GlassTobaccoBowl
     {
-        DisplayName = Rolled Blunt,
+        DisplayName = Glass Tobacco Pipe,
+        DisplayCategory = Junk,
+        Type = Junk,
+        Icon = Glassbowl,
+        Weight = 0.03,
+        EvolvedRecipe = BowlOfGreenCrack:1, BowlOfPurpleKush:1, BowlOfNorthernLights:1
+    }
+
+/** ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE /**
+/** BELOW IS A BASIC RENDITION OF WHAT YOU CAN CREATE /**
+/** PLEASE FOLLOW THE FORMAT! /**
+    item PoorlyRolledGreenCrackJoint
+    {
+        DisplayName = Poorly Rolled Green Crack Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +15,
+        ThirstChange = +10,
+        BoredomChange = -15,
+        PainReduction = -2,
+        StressChange = -5,
+        UnhappyChange = -3,
+        Tags = Marijuana,
+        EvolvedRecipeName = PoorlyRolledGreenCrackJoint,
+    },
+    item PoorlyRolledPurpleKushJoint
+    {
+        DisplayName = Poorly Rolled Purple Kush Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +15,
+        ThirstChange = +10,
+        BoredomChange = -15,
+        PainReduction = -2,
+        StressChange = -5,
+        UnhappyChange = -3,
+        Tags = Marijuana,
+        EvolvedRecipeName = PoorlyRolledPurpleKushJoint,
+    },
+    item PoorlyRolledNorthernLightsJoint
+    {
+        DisplayName = Poorly Rolled Northern Lights Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +15,
+        ThirstChange = +10,
+        BoredomChange = -15,
+        PainReduction = -2,
+        StressChange = -5,
+        UnhappyChange = -3,
+        Tags = Marijuana,
+        EvolvedRecipeName = PoorlyRolledNorthernLightsJoint,
+    },
+    item GreenCrackJoint
+    {
+        DisplayName = Green Crack Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +10,
+        ThirstChange = +7,
+        BoredomChange = -20,
+        PainReduction = -4,
+        StressChange = -10,
+        UnhappyChange = -6
+        Tags = Marijuana,
+        EvolvedRecipeName = GreenCrackJoint,
+    },
+    item PurpleKushJoint
+    {
+        DisplayName = Purple Kush Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +10,
+        ThirstChange = +7,
+        BoredomChange = -20,
+        PainReduction = -4,
+        StressChange = -10,
+        UnhappyChange = -6
+        Tags = Marijuana,
+        EvolvedRecipeName = PurpleKushJoint,
+    },
+    item NorthernLightsJoint
+    {
+        DisplayName = Northern Lights Joint
+        DisplayCategory = Medical
+        Type = Medical
+        Weight = 0.4
+        HungerChange = +10,
+        ThirstChange = +7,
+        BoredomChange = -20,
+        PainReduction = -4,
+        StressChange = -10,
+        UnhappyChange = -6
+        Tags = Marijuana,
+        EvolvedRecipeName = Northern Lights Joint,
+    },
+    item GreenCrackBlunt
+    {
+        DisplayName = Green Crack Blunt,
         DisplayCategory = Medical,
         Type = Medical,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = RolledBlunt,
+        EvolvedRecipeName = GreenCrackBlunt,
+        Tags = Marijuana,
+    }
+    item PurpleKushBlunt
+    {
+        DisplayName = Purple Kush Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = PurpleKushBlunt,
+        Tags = Marijuana,
+    },
+    item NorthernLightsBlunt
+    {
+        DisplayName = Northern Lights Blunt,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = RolledBlunt,
+        Weight = 0.01,
+        EvolvedRecipeName = NorthernLightsBlunt,
+        Tags = Marijuana,
+    },
+    item BowlOfGreenCrack
+    {
+        DisplayName = Fat Bowl of green crack,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = Bowlofgreen,
+        Weight = 0.04,
+        EvolvedRecipeName = BowlOfGreencrack,
+        Tags = Marijuana,
+    },
+    item BowlOfPurpleKush
+    {
+        DisplayName = Fat Bowl of Purple Kush,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = Bowlofgreen,
+        Weight = 0.04,
+        EvolvedRecipeName = BowlOfPurpleKush,
+        Tags = Marijuana,
+    },
+    item BowlOfNorthernLights
+    {
+        DisplayName = Fat Bowl of NorthernLights,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Icon = Bowlofgreen,
+        Weight = 0.04,
+        EvolvedRecipeName = BowlOfNorthernLights,
         Tags = Marijuana,
     }
 
-### Edible Marijuana Items ###
-### Be Sure to also set Calories Etc for each item you add below, and follow the format! ###
-### You can also use the EvolvedRecipeName Variable here to set a finished item made from cooking ###
-### Just be sure to use the EvolvedRecipe variable on the items you want to use to create it! ###
+/** Edible Marijuana Items /**
+/** Be Sure to also set Calories Etc for each item you add below, and follow the format! /**
+/** You can also use the EvolvedRecipeName Variable here to set a finished item made from cooking /**
+/** Just be sure to use the EvolvedRecipe variable on the items you want to use to create it! /**
     item HashBrownies
     {
         DisplayName = Hash Brownies (100mg),
@@ -139,8 +257,8 @@
         UnhappyChange = -11,
         EvolvedRecipeName = MilkyBongRip,
     }
-### MARIJUANA STRAINS ###
-### YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT ###
+/** MARIJUANA STRAINS /**
+/** YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT /**
     item PurpleKush
     {
         DisplayName = Purple Kush,
@@ -149,7 +267,7 @@
         weight = 0.35,
         Icon = Ziplockbag,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,RolledBlunt:2,
+        EvolvedRecipe = PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:2,PurpleKushBlunt:2,BowlOfPurpleKush,
     },
     item GreenCrack
     {
@@ -159,6 +277,16 @@
         Weight = 0.35,
         Icon = Ziplockbag2,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledJoint:1;RolledJoint:2,RolledBlunt:2,
+        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:2,GreenCrackBlunt:2,BowlOfGreenCrack:1,
+    },
+    item NorthernLights
+    {
+        DisplayName = Northern Lights,
+        DisplayCategory = Medical,
+        Type = Medical,
+        Weight = 0.35,
+        Icon = Ziplockbag3,
+        Tags = Marijuana,
+        EvolvedRecipe = PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:2,NorthernLightsBlunt:2,BowlOfNorthernLights:1,
     },
 
