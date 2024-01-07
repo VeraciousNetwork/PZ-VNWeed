@@ -1,0 +1,163 @@
+module Base
+{
+    recipe Bong Of Green Crack
+    {
+        keep GlassWaterPipe,
+        GreenCrack=1,
+
+        Result:BongOfGreenCrack,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bong Of Purple Kush
+    {
+        keep GlassWaterPipe,
+        PurpleKush=1,
+
+        Result:BongOfPurpleKush,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bong Of Northern Lights
+    {
+        keep GlassWaterPipe,
+        NorthernLights=1,
+
+        Result:BongOfNorthernLights,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bong Of Pineapple Express
+    {
+        keep GlassWaterPipe,
+        PineappleExpress=1,
+
+        Result:BongOfPineappleExpress,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bowl Of Green Crack
+    {
+        keep GlassTobaccoPipe,
+        GreenCrack=1,
+
+        Result:BowlOfGreenCrack,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bowl Of Purple Kush
+    {
+        keep GlassTobaccoPipe,
+        PurpleKush=1,
+
+        Result:BowlOfPurpleKush,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bowl Of Northern Lights
+    {
+        keep GlassTobaccoPipe,
+        NorthernLights=1,
+
+        Result:BowlOfNorthernLights,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Bowl Of Pineapple Express
+    {
+        keep GlassTobaccoPipe,
+        PineappleExpress=1,
+
+        Result:BowlOfPineappleExpress,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Poorly Rolled Green Crack Joint
+    {
+        destroy GreenCrack,
+        RollingPapers=1,
+
+        Result:PoorlyRolledGreenCrackJoint,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Catergory:Health,
+    }
+    recipe Poorly Rolled Purple Kush Joint
+    {
+        destroy PurpleKush,
+        RollingPapers=1,
+
+        Result:PoorlyRolledPurpleKushJoint,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Catergory:Health,
+    }
+    recipe Poorly Rolled Northern Lights Joint
+    {
+        destroy NorthernLights,
+        RollingPapers=1,
+
+        Result:PoorlyRolledNorthernLightsJoint,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Catergory:Health,
+    }
+    recipe Poorly Rolled Pineapple Express Joint
+    {
+        destroy PineappleExpress,
+        RollingPapers=1,
+
+        Result:PoorlyRolledPineappleExpressJoint,
+        Time:160.0,
+        NeedToBeLearn:False,
+        Catergory:Health,
+    }
+    recipe Green Crack Joint
+    {
+        destroy RollingPapers,
+        GreenCrack=2,
+
+        Result:GreenCrackJoint,
+        Time:200.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Purple Kush Joint
+    {
+        destroy RollingPapers,
+        PurpleKush=2,
+
+        Result:PurpleKushJoint,
+        Time:200.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Northern Lights Joint
+    {
+        destroy RollingPapers,
+        NorthernLights=2,
+
+        Result:NorthernLightsJoint,
+        Time:200.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Pineapple Express Joint
+    {
+        destroy RollingPapers,
+        PineappleExpress=2,
+
+        Result:PineappleExpressJoint,
+        Time:200.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+}
