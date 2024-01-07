@@ -65,7 +65,6 @@
         Type = Junk,
         Icon = Rollingpaper,
         Weight = 0.01,
-        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:1,PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:1,PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:1,PoorlyRolledPineappleExpressJoint:1,PineappleExpressJoint:1,
         Tags = Marijuana,
     },
     item WhiteOwlBluntWrap
@@ -76,7 +75,6 @@
         Icon = WhiteOwlWraps,
         Weight = 0.01,
         Tags = Marijuana,
-        EvolvedRecipe = GreenCrackBlunt:1, PurpleKushBlunt:1, NorthernLightsBlunt:1, PineappleExpressBlunt:1,
     },
     item BackwoodsBluntWrap
     {
@@ -86,7 +84,6 @@
         Icon = BackwoodsWraps,
         Weight = 0.01,
         Tags = Marijuana,
-        EvolvedRecipe = GreenCrackBackwoodsBlunt:1, PurpleKushBackwoodsBlunt:1, NorthernLightsBackwoodsBlunt:1, PineappleExpressBackwoodsBlunt:1,
     },
     item WaterBottleBong
     {
@@ -95,8 +92,6 @@
         Type = Junk,
         Icon = WaterBottleBong,
         Weight = 0.02,
-        EvolvedRecipe = MilkyBongRip:1,
-        EvolvedRecipeName = WaterBottleBong,
         Tags = Marijuana,
     },
 
@@ -113,7 +108,6 @@
         Type = Junk,
         Icon = Glassbowl,
         Weight = 0.03,
-        EvolvedRecipe = BowlOfGreenCrack:1, BowlOfPurpleKush:1, BowlOfNorthernLights:1, BowlOfPineappleExpress:1,
     },
     item GlassWaterPipe
     {
@@ -122,7 +116,6 @@
         Type = Junk,
         Icon = GlassWaterPipe,
         Weight = 0.04,
-        EvolvedRecipe = BongOfGreenCrack:1, BongOfPurpleKush:1, BongOfNorthernLights:1, BongOfPineappleExpress:1,
     },
 
 /** ADD YOUR OWN SMOKABLE (USABLE) ITEMS HERE /**
@@ -131,12 +124,12 @@
 
 /** POOR JOINTS /**
 
-    item PoorlyRolledGreenCrackJoint
+    recipe Poorly Rolled Green Crack Joint
     {
-        DisplayName = Poorly Rolled Green Crack Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Poorly Rolled Green Crack Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +15,
         ThirstChange = +10,
         BoredomChange = -15,
@@ -144,15 +137,20 @@
         StressChange = -5,
         UnhappyChange = -3,
         Tags = Marijuana,
-        EvolvedRecipeName = PoorlyRolledGreenCrackJoint,
-        OnCreate = Marijuana.OnCreateNewPoorJointItem,
+        GreenCrack = 1,
+        RollingPapers = 1,
+        Result : PoorlyRolledGreenCrackJoint,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PoorlyRolledPurpleKushJoint
+    recipe Poorly Rolled Purple Kush Joint
     {
-        DisplayName = Poorly Rolled Purple Kush Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Poorly Rolled Purple Kush Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +15,
         ThirstChange = +10,
         BoredomChange = -15,
@@ -160,15 +158,20 @@
         StressChange = -5,
         UnhappyChange = -3,
         Tags = Marijuana,
-        EvolvedRecipeName = PoorlyRolledPurpleKushJoint,
-        OnCreate = Marijuana.OnCreateNewPoorJointItem,
+        PurpleKush = 1,
+        RollingPapers = 1,
+        Result : PoorlyRolledPurpleKushJoint,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PoorlyRolledNorthernLightsJoint
+    recipe Poorly Rolled Northern Lights Joint
     {
-        DisplayName = Poorly Rolled Northern Lights Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Poorly Rolled Northern Lights Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +15,
         ThirstChange = +10,
         BoredomChange = -15,
@@ -176,15 +179,20 @@
         StressChange = -5,
         UnhappyChange = -3,
         Tags = Marijuana,
-        EvolvedRecipeName = PoorlyRolledNorthernLightsJoint,
-        OnCreate = Marijuana.OnCreateNewPoorJointItem,
+        NorthernLights = 1,
+        RollingPapers = 1,
+        Result : PoorlyRolledNorthernLightsJoint,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PoorlyRolledPineappleExpressJoint
+    recipe Poorly Rolled Pineapple Express Joint
     {
-        DisplayName = Poorly Rolled Pineapple Express Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Poorly Rolled Pineapple Express Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +15,
         ThirstChange = +10,
         BoredomChange = -15,
@@ -192,16 +200,21 @@
         StressChange = -5,
         UnhappyChange = -3,
         Tags = Marijuana,
-        EvolvedRecipeName = PoorlyRolledPineappleExpressJoint,
-        OnCreate = Marijuana.OnCreateNewPoorJointItem,
+        PineappleExpress = 1,
+        RollingPapers = 1,
+        Result : PoorlyRolledPineappleExpressJoint,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
 /** GOOD JOINTS /**
-    item GreenCrackJoint
+    recipe Green Crack Joint
     {
-        DisplayName = Green Crack Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Green Crack Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +10,
         ThirstChange = +7,
         BoredomChange = -20,
@@ -209,15 +222,20 @@
         StressChange = -10,
         UnhappyChange = -6
         Tags = Marijuana,
-        EvolvedRecipeName = GreenCrackJoint,
-        OnCreate = Marijuana.OnCreateNewGoodJointItem,
+        GreenCrack = 2,
+        RollingPapers = 1,
+        Result : GreenCrackJoint,
+        Time : 25,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PurpleKushJoint
+    recipe Purple Kush Joint
     {
-        DisplayName = Purple Kush Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Purple Kush Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +10,
         ThirstChange = +7,
         BoredomChange = -20,
@@ -225,15 +243,20 @@
         StressChange = -10,
         UnhappyChange = -6
         Tags = Marijuana,
-        EvolvedRecipeName = PurpleKushJoint,
-        OnCreate = Marijuana.OnCreateNewGoodJointItem,
+        PurpleKush = 1,
+        RollingPapers = 1,
+        Result : PurpleKushJoint,
+        Time : 25,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item NorthernLightsJoint
+    recipe Northern Lights Joint
     {
-        DisplayName = Northern Lights Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Northern Lights Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +10,
         ThirstChange = +7,
         BoredomChange = -20,
@@ -241,15 +264,20 @@
         StressChange = -10,
         UnhappyChange = -6
         Tags = Marijuana,
-        EvolvedRecipeName = NorthernLightsJoint,
-        OnCreate = Marijuana.OnCreateNewGoodJointItem,
+        NorthernLights = 2,
+        RollingPapers = 1,
+        Result : NorthernLightsJoint,
+        Time : 25,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PineappleExpressJoint
+    recipe Pineapple Express Joint
     {
-        DisplayName = Pineapple Express Joint
-        DisplayCategory = Medical
-        Type = Medical
-        Weight = 0.4
+        DisplayName = Pineapple Express Joint,
+        DisplayCategory = FirstAid,
+        Type = Food,
+        Weight = 0.4,
         HungerChange = +10,
         ThirstChange = +7,
         BoredomChange = -20,
@@ -257,135 +285,208 @@
         StressChange = -10,
         UnhappyChange = -6
         Tags = Marijuana,
-        EvolvedRecipeName = PineappleExpressJoint,
-        OnCreate = Marijuana.OnCreateNewGoodJointItem,
+        PineappleExpress = 2,
+        RollingPapers = 1,
+        Result : PineappleExpressJoint,
+        Time : 25,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
 /** BLUNTS /**
-    item GreenCrackBlunt
+    recipe Green Crack Blunt
     {
         DisplayName = Green Crack Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = GreenCrackBlunt,
         Tags = Marijuana,
+        GreenCrack = 3,
+        WhiteOwlBluntWrap = 1,
+        Result : GreenCrackBlunt,
+        Time : 35,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PurpleKushBlunt
+    recipe Purple Kush Blunt
     {
         DisplayName = Purple Kush Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = PurpleKushBlunt,
         Tags = Marijuana,
+        PurpleKush = 3,
+        WhiteOwlBluntWrap = 1,
+        Result : PurpleKushBlunt,
+        Time : 35,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item NorthernLightsBlunt
+    recipe Northern Lights Blunt
     {
         DisplayName = Northern Lights Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = NorthernLightsBlunt,
         Tags = Marijuana,
+        NorthernLights = 3,
+        WhiteOwlBluntWrap = 1,
+        Result : NorthernLightsBlunt,
+        Time : 35,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PineappleExpressBlunt
+    recipe Pineapple Express Blunt
     {
-        DisplayName = Pineapple Express Backwoods Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayName = Pineapple Express Blunt,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = PineappleExpressBlunt,
         Tags = Marijuana,
+        PineappleExpress = 3,
+        WhiteOwlBluntWrap = 1,
+        Result : PineappleExpressBlunt,
+        Time : 35,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
 /** BACKWOODS BLUNTS /**
-    item GreenCrackBackwoodsBlunt
+    recipe Green Crack Backwoods Blunt
     {
         DisplayName = Green Crack Backwoods Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = GreenCrackBackwoodsBlunt,
         Tags = Marijuana,
+        GreenCrack = 5,
+        BackwoodsBluntWrap = 1,
+        Result : GreenCrackBackwoodsBlunt,
+        Time : 40,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PurpleKushBackwoodsBlunt
+    recipe Purple Kush Backwoods Blunt
     {
         DisplayName = Purple Kush Backwoods Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = PurpleKushBackwoodsBlunt,
         Tags = Marijuana,
+        PurpleKush = 5,
+        BackwoodsBluntWrap = 1,
+        Result : PurpleKushBackwoodsBlunt,
+        Time : 40,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item NorthernLightsBackwoodsBlunt
+    recipe Northern Lights Backwoods Blunt
     {
         DisplayName = Northern Lights Backwoods Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = NorthernLightsBackwoodsBlunt,
         Tags = Marijuana,
+        NorthernLights = 5,
+        BackwoodsBluntWrap = 1,
+        Result : NorthernLightsBackwoodsBlunt,
+        Time : 40,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item PineappleExpressBackwoodsBlunt
+    recipe Pineapple Express Backwoods Blunt
     {
         DisplayName = Pineapple Express Backwoods Blunt,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = RolledBlunt,
         Weight = 0.01,
-        EvolvedRecipeName = PineappleExpressBackwoodsBlunt,
         Tags = Marijuana,
+        PineappleExpress = 5,
+        BackwoodsBluntWrap = 1,
+        Result : PineappleExpressBackwoodsBlunt,
+        Time : 40,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
 /** BOWLS OF WEED /**
-    item BowlOfGreenCrack
+    recipe Bowl Of Green Crack
     {
         DisplayName = Fat Bowl of green crack,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = Bowlofgreen,
         Weight = 0.04,
-        EvolvedRecipeName = BowlOfGreencrack,
         Tags = Marijuana,
-        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
+        GreenCrack = 1,
+        GlassTobaccoPipe = 1,
+        Result : BowlOfGreenCrack,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item BowlOfPurpleKush
+    recipe Bowl Of Purple Kush
     {
         DisplayName = Fat Bowl of Purple Kush,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         Icon = Bowlofgreen,
         Weight = 0.04,
-        EvolvedRecipeName = BowlOfPurpleKush,
         Tags = Marijuana,
-        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
+        PurpleKush = 1,
+        GlassTobaccoPipe = 1,
+        Result : BowlOfPurpleKush,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item BowlOfNorthernLights
+    recipe Bowl Of Northern Lights
     {
         DisplayName = Fat Bowl of NorthernLights,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Joint,
         Icon = Bowlofgreen,
         Weight = 0.04,
-        EvolvedRecipeName = BowlOfNorthernLights,
         Tags = Marijuana,
-        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
+        NorthernLights = 1,
+        GlassTobaccoPipe = 1,
+        Result : BowlOfNorthernLights,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
-    item BowlOfPineappleExpress
+    recipe Bowl Of Pineapple Express
     {
         DisplayName = Fat Bowl of Pineapple Express,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Joint,
         Icon = Bowlofgreen,
         Weight = 0.04,
-        EvolvedRecipeName = BowlOfPineappleExpress,
         Tags = Marijuana,
-        OnCreate = Marijuana.OnCreateNewMarijuanaItem,
+        PineappleExpress = 1,
+        GlassTobaccoPipe = 1,
+        Result : BowlOfPineappleExpress,
+        Time : 20,
+        AnimNode : Craft,
+        NeedToBeLearn : false,
+        RequireInHandOrInventory = Matches/Lighter,
     },
 
 /** Edible Marijuana Items /**
@@ -411,8 +512,8 @@
     item MilkyBongRip
     {
         DisplayName = Milky Bong Rip
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Food,
         weight = 0.01,
         Icon = WaterBottleBongFilled,
         HungerChange = +9,
@@ -421,7 +522,6 @@
         PainReduction = -20,
         StressChange = -20,
         UnhappyChange = -20,
-        EvolvedRecipeName = MilkyBongRip,
     },
 /** MARIJUANA STRAINS /**
 /** YOU CAN ADD MORE STRAINS HERE JUST FOLLOW THE FORMAT /**
@@ -429,41 +529,37 @@
     item PurpleKush
     {
         DisplayName = Purple Kush,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Normal,
         weight = 0.35,
         Icon = Ziplockbag,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledPurpleKushJoint:1;PurpleKushJoint:2,PurpleKushBlunt:2,BowlOfPurpleKush:1,PurpleKushBackwoodsBlunt:4,
     },
     item GreenCrack
     {
         DisplayName = Green Crack,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Normal,
         Weight = 0.35,
         Icon = Ziplockbag2,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledGreenCrackJoint:1;GreenCrackJoint:2,GreenCrackBlunt:2,BowlOfGreenCrack:1,GreenCrackBackwoodsBlunt:4,
     },
     item NorthernLights
     {
         DisplayName = Northern Lights,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Normal,
         Weight = 0.35,
         Icon = Ziplockbag3,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledNorthernLightsJoint:1;NorthernLightsJoint:2,NorthernLightsBlunt:2,BowlOfNorthernLights:1,NorthernLightsBackwoodsBlunt:4,
     },
     item PineappleExpress
     {
         DisplayName = Pineapple Express,
-        DisplayCategory = Medical,
-        Type = Medical,
+        DisplayCategory = FirstAid,
+        Type = Normal,
         Weight = 0.35,
         Icon = Ziplockbag4,
         Tags = Marijuana,
-        EvolvedRecipe = PoorlyRolledPineappleExpressJoint:1;PineappleExpressJoint:2,PineappleExpressBlunt:2,BowlOfPineappleExpress:1,PineappleExpressBackwoodsBlunt:4,
     },
 
