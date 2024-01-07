@@ -1,4 +1,4 @@
 name=PZ-VNWeed
-poster=420.png        //* link to the mod main graphic
-id=legalizeit            //* the id. this is used when referring to the mod.
+poster=420.png        
+id=legalizeit          
 description= Adds various cannabis crops to the game, each strain resulting in a different temp buff.
