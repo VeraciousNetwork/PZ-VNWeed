@@ -1,59 +1,61 @@
 # VN-Weed
 A WIP Marijuana System for Project Zomboid
 
-This system is using Evolved Recipe Variables to control crafting various Smokeable items! 
-It is being designed from the ground up with explicit use of documentation, thus making it a great
-starting point for anyone wanting to add their own custom Items into the game. 
+Created With the Hope that it helps others Create their own mods, Feel free to edit, redistribute as you wish, Proper Credit would be nice though! 
 
-Some important Information
+**Adding your Own Items**
+Lets start simple. You want an item, you make an item using the following format
 
-it took me some time to understand how exactly EvolvedRecipes Work, After some time I came to the obvious answer, the answer thats not really expressed in any of the wiki's
-
-Here is our example
-
-Lets say we want to make a sandwhich item that needs both bread and cold cuts
-We create our 3 Items in total ( one for sandwhich bread, one for cold cuts, and one for our finished Sandwhich ) 
 ```
-item Bread
+item testitem
 {
-    DisplayName = Bread,
-    DisplayCategory = Food,
-    Type = Food,
-    HungerChange = -2,
-    Weight = 0.1,
-    EvolvedRecipe = Sandwhich:1,
-}
-```
-As you can see under the **EvolvedRecipe** variable we have defined that this only needs ONE of this item to craft the recipe ( shown after the : ) 
-
-Now we create our second item, the cold cuts
-```
-item ColdCuts
-{
-    DisplayName = Cold Cuts,
-    Display Category = Food,
-    Type = Food,
-    HungerChange = -3,
-    ThirstChange = -1,
+    DisplayCategory = Junk,
     Weight = 0.01,
-    EvolvedRecipe = Sandwhich:2,
+    Type = Normal,
+    DisplayName = Display Name Here,
+    Icon = image,
+    Wet = FALSE,
 }
 ```
-Now we have created the second of three items. Again you can see the number of required items to create the final recipe after the semicolon. Now we have 2 items both being called to be able to create an item called "Sandwhich" So lets create the sandwhich item! 
+
+That's It, an item is created. Now to make that Item Craftable (if we wish) 
+
 ```
-item Sandwhich
+recipe Test Item
 {
-    DisplayName = Sandwhich,
-    DisplayCategory = Food,
-    Type = Food,
-    HungerChange = -6,
-    Thirst Change = -2,
-    Weight = 0.02,
-    EvolvedRecipeName = Sandwhich,
+    keep testitem,
+    nails=4,
+
+    Result:TestItemWithNails,
+    Time: 120.0,
+    NeedToBeLearn:FALSE,
 }
 ```
-As you can see we didnt use the Regular EvolvedRecipe Variable as we did in the first two items, because this item is the result of combining the other two items together. Instead we use the **EvolvedRecipeName** variable to define the name of the recipe (the same name the other two items are looking for) 
+Thats it, Now their is a recipe for the item named TestItemWithNails. However we also need to make sure there is an item with that name. This would simply be
+```
+item TestItemWithNails
+{
+    DisplayCategory = Junk,
+    Weight = 0.01,
+    Type = Normal,
+    DisplayName = Display Name Here,
+    Icon = image,
+    Wet = FALSE,
+}
+```
 
-Now that this is complete, taking 1 bread and 2 cold cuts will combine into one sandwhich!
+Now when a User has both of the items, nails and our test Item, They will be able to craft the TestItemWithNails Item. 
 
-**NOTE : THIS IS NOT ALL YOU NEED TO DO TO CREATE NEW ITEMS, THIS IS SIMPLY AN EXPLANATION ON EDITING THE WEED.TXT ITEMS DOCUMENT. THIS READ ME WILL CONTINUE TO EXPAND AS MORE AND MORE CODE IS ADDED TO THE MOD** 
+Pretty simple and straight forward. For Further Documentation on Variables that can be set on Items Visit this link: https://pzwiki.net/wiki/Scripts_guide/Item_Script_Parameters
+For Further Documentation Regarding Recipe variable, visit this link: https://pzwiki.net/wiki/Scripts_guide/Recipe_Script_Guide
+
+Onto Creating your Lua Functions in order to call the items you've created, into the game world. 
+
+You can reference the script located in /media/lua/server/Distrubutions.lua
+these are very basic lua calls and functions, I suggest referencing other mods in order to find out container names etc. 
+
+**PLANS FOR THE FUTURE**
+
+Marijuana Cultivation
+Marijuana Specific Traits and Skills
+Marijuana Specific Recipes
