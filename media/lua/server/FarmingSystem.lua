@@ -35,5 +35,7 @@ if ProceduralDistributions ~= nil then
                     local growCode = farming_vegetableconf.props[luaObject.typeOfSeed].growCode
                     luaObject = assert(loadstring('return '..growCode..'(...)'))(luaObject, nextGrowing, updateNbOfGrow)
                 end
+            end
         end
+
     end
