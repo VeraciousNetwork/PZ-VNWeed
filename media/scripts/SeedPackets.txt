@@ -1,0 +1,106 @@
+module Base
+{
+    /***********ITEMS**************/
+
+    item CigaretteCellophaneWrapper
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.01,
+        Wet = FALSE,
+        Icon = Cellophane,
+        DisplayName = Cigarette Cellophane Wrapper,
+    }
+    item PacketOfGreenCrackSeeds
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = SeedPacket,
+        DisplayName = Packet Of Green Crack Seeds,
+    }
+    item PacketOfPurpleKushSeeds
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = SeedPacket,
+        DisplayName = Packet Of Purple Kush Seeds,
+    }
+    item PacketOfNorthernLightsSeeds
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = SeedPacket,
+        DisplayName = Packet Of Northern Lights Seeds,
+    }
+    item PacketOfPineappleExpressSeeds
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = SeedPacket,
+        DisplayName = Packet Of Pineapple Express Seeds,
+    }
+    item PacketOfBruceBannerSeeds
+    {
+        DisplayCategory = Farming,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = SeedPacket,
+        DisplayName = Packet Of Bruce Banner Seeds,
+    }
+
+    /*************RECIPE****************/
+
+    recipe Cigarette Cellophane Wrapper
+    {
+        Destroy Cigarettes,
+
+        Result:CigaretteCellophaneWrapper,
+        Time:100.0,
+        NeedToBeLearn:False,
+    }
+    recipe Packet of Green Crack Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        GreenCrackSeed=6,
+
+        Result:PacketOfGreenCrackSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Packet of Purple Kush Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        PurpleKushSeed=6,
+
+        Result:PacketOfPurpleKushSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Packet of Northern Lights Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        NorthernLightsSeed=6,
+
+        Result:PacketOfNorthernLightsSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Packet of Pineapple Express Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        PineappleExpressSeed=6,
+
+        Result:PacketOfPineappleExpressSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+}

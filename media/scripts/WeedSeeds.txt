@@ -1,0 +1,48 @@
+module Base
+{
+    item GreenCrackSeed
+    {
+        DisplayCategory = Farming,
+        Type = Food,
+        Weight = 0.1,
+        Wet = FALSE,
+        Icon = CannabisSeed,
+        DisplayName = Green Crack Seed,
+    }
+    item PurpleKushSeed
+    {
+        DisplayCategory = Farming,
+        Type = Food,
+        Weight = 0.1,
+        Wet = FALSE,
+        Icon = CannabisSeed,
+        DisplayName = Purple Kush Seed,
+    }
+    item NorthernLightsSeed
+    {
+        DisplayCategory = Farming,
+        Type = Food,
+        Weight = 0.1,
+        Wet = FALSE,
+        Icon = CannabisSeed,
+        DisplayName = Northern Lights Seed,
+    }
+    item PineappleExpressSeed
+    {
+        DisplayCategory = Farming,
+        Type = Food,
+        Weight = 0.1,
+        Wet = FALSE,
+        Icon = CannabisSeed,
+        DisplayName = Pineapple Express Seed,
+    }
+    item BruceBannerSeed
+    {
+        DisplayCategory = Farming,
+        Type = Food,
+        Weight = 0.1,
+        Wet = FALSE,
+        Icon = CannabisSeed,
+        DisplayName = Bruce Banner Seed,
+    }
+}
