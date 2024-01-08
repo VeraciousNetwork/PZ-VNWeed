@@ -659,4 +659,3 @@ module Base
         CustomEatSound = ,
     }
 }
-

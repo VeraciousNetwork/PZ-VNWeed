@@ -2,47 +2,57 @@ module Base
 {
     item GreenCrackSeed
     {
-        DisplayCategory = Farming,
-        Type = Food,
-        Weight = 0.1,
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.001,
         Wet = FALSE,
         Icon = CannabisSeed,
         DisplayName = Green Crack Seed,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Seeds_Ground,
     }
     item PurpleKushSeed
     {
-        DisplayCategory = Farming,
-        Type = Food,
-        Weight = 0.1,
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.001,
         Wet = FALSE,
-        Icon = CannabisSeed,
+        Icon = cannabisseed,
         DisplayName = Purple Kush Seed,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Seeds_Ground,
     }
     item NorthernLightsSeed
     {
-        DisplayCategory = Farming,
-        Type = Food,
-        Weight = 0.1,
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.001,
         Wet = FALSE,
-        Icon = CannabisSeed,
+        Icon = cannabisseed,
         DisplayName = Northern Lights Seed,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Seeds_Ground,
     }
     item PineappleExpressSeed
     {
-        DisplayCategory = Farming,
-        Type = Food,
-        Weight = 0.1,
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.001,
         Wet = FALSE,
-        Icon = CannabisSeed,
+        Icon = cannabisseed,
         DisplayName = Pineapple Express Seed,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Seeds_Ground,
     }
     item BruceBannerSeed
     {
-        DisplayCategory = Farming,
-        Type = Food,
-        Weight = 0.1,
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.001,
         Wet = FALSE,
-        Icon = CannabisSeed,
+        Icon = cannabisseed,
         DisplayName = Bruce Banner Seed,
+        SurvivalGear = TRUE,
+        WorldStaticModel = Seeds_Ground,
     }
 }

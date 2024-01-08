@@ -1,0 +1,76 @@
+module Base
+{
+    item HashOil
+    {
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.5,
+        Icon = shatter,
+        Wet = FALSE,
+        DisplayName = Shatter,
+    }
+    item HotWeedPress
+    {
+        DisplayCategory = Junk,
+        Type = Normal,
+        Weight = 1.5,
+        Icon = weedpress,
+        Wet = FALSE,
+        DisplayName = Weed Press,
+    }
+    recipe Green Oil Extraction
+    {
+        destroy OunceOfGreenCrack,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe purple Oil Extraction
+    {
+        destroy OunceOfPurpleKush,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe North Oil Extraction
+    {
+        destroy OunceOfNorthernLights,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Pineapple Oil Extraction
+    {
+        destroy OunceOfPineappleExpress,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Bruce Oil Extraction
+    {
+        destroy OunceOfBruceBanner,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Weed Press
+    {
+        destroy ScarpElectronics=3,
+        destroy ScrapMetal,
+        destroy SpareEngineParts,
+
+        Result:HotWeedPress,
+        Time:2500.0,
+        NeedToBeLearn:FALSE,
+    }
+}
