@@ -163,4 +163,49 @@ module Base
         NeedToBeLearn:FALSE,
         Category:Health,
     }
+    recipe Break Down Ounce Of Bruce Banner
+    {
+        destroy OunceOfBruceBanner,
+
+        Result:BruceBanner=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Pineapple Express
+    {
+        destroy OunceOfPineappleExpress,
+
+        Result:PineappleExpress=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Northern Lights
+    {
+        destroy OunceOfNorthernLights,
+
+        Result:NorthernLights=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Purple Kush
+    {
+        destroy OunceOfPurpleKush,
+
+        Result:PurpleKush=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Green Crack
+    {
+        destroy OunceOfGreenCrack,
+
+        Result:GreenCrack=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
 }
