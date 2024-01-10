@@ -79,14 +79,14 @@ farming_vegetableconf.props["GreenCrack"].minVegAutorized = 4;
 farming_vegetableconf.props["GreenCrack"].maxVegAutorized = 4;
 
 farming_vegetableconf.sprite["GreenCrack"] = {
-	"VNWeed3_0",
-	"VNWeed3_8",
-	"VNWeed3_2",
-	"VNWeed3_10",
-	"VNWeed3_12",
-	"VNWeed3_22",
 	"VNWeed3_16",
-	"VNWeed3_4"
+	"VNWeed3_0",
+	"VNWeed3_2",
+	"VNWeed3_4",
+	"VNWeed3_8",
+	"VNWeed3_6",
+	"VNWeed3_10",
+	"VNWeed3_12"
 }
 
 -- PurpleKush
@@ -105,14 +105,14 @@ farming_vegetableconf.props["PurpleKush"].minVegAutorized = 4;
 farming_vegetableconf.props["PurpleKush"].maxVegAutorized = 4;
 
 farming_vegetableconf.sprite["PurpleKush"] = {
-	"VNWeed3_0",
-	"VNWeed3_8",
-	"VNWeed3_2",
-	"VNWeed3_10",
-	"VNWeed3_12",
-	"VNWeed3_14",
 	"VNWeed3_16",
-	"VNWeed3_4"
+	"VNWeed3_0",
+	"VNWeed3_2",
+	"VNWeed3_4",
+	"VNWeed3_8",
+	"VNWeed3_14",
+	"VNWeed3_10",
+	"VNWeed3_12"
 }
 
 -- NorthernLights
@@ -133,14 +133,14 @@ farming_vegetableconf.props["NorthernLights"].minVegAutorized = 4;
 farming_vegetableconf.props["NorthernLights"].maxVegAutorized = 4;
 
 farming_vegetableconf.sprite["NorthernLights"] = {
-	"VNWeed3_0",
-	"VNWeed3_8",
-	"VNWeed3_2",
-	"VNWeed3_10",
-	"VNWeed3_12",
-	"VNWeed3_38",
 	"VNWeed3_16",
-	"VNWeed3_4"
+	"VNWeed3_0",
+	"VNWeed3_2",
+	"VNWeed3_4",
+	"VNWeed3_8",
+	"VNWeed3_22",
+	"VNWeed3_10",
+	"VNWeed3_12"
 }
 
 -- PineappleExpress
@@ -161,14 +161,14 @@ farming_vegetableconf.props["PineappleExpress"].minVegAutorized = 4;
 farming_vegetableconf.props["PineappleExpress"].maxVegAutorized = 4;
 
 farming_vegetableconf.sprite["PineappleExpress"] = {
-	"VNWeed3_0",
-	"VNWeed3_8",
-	"VNWeed3_2",
-	"VNWeed3_10",
-	"VNWeed3_12",
-	"VNWeed3_30",
 	"VNWeed3_16",
-	"VNWeed_4"
+	"VNWeed3_0",
+	"VNWeed3_2",
+	"VNWeed3_4",
+	"VNWeed3_8",
+	"VNWeed3_20",
+	"VNWeed3_10",
+	"VNWeed3_12"
 }
 
 -- BruceBanner
@@ -189,14 +189,14 @@ farming_vegetableconf.props["BruceBanner"].minVegAutorized = 4;
 farming_vegetableconf.props["BruceBanner"].maxVegAutorized = 4;
 
 farming_vegetableconf.sprite["BruceBanner"] = {
-	"VNWeed3_0",
-	"VNWeed3_8",
-	"VNWeed3_2",
-	"VNWeed3_10",
-	"VNWeed3_12",
-	"VNWeed3_6",
 	"VNWeed3_16",
-	"VNWeed3_4"
+	"VNWeed3_0",
+	"VNWeed3_2",
+	"VNWeed3_4",
+	"VNWeed3_8",
+	"VNWeed3_18",
+	"VNWeed3_10",
+	"VNWeed3_12"
 }
 
 if ProceduralDistributions then
