@@ -103,7 +103,7 @@ module Base
     recipe Poorly Rolled Green Crack Joint
     {
         destroy GreenCrack,
-        RollingPapers=1,
+        SingleRollingPaper=1,
 
         Result:PoorlyRolledGreenCrackJoint,
         Time:160.0,
@@ -113,7 +113,7 @@ module Base
     recipe Poorly Rolled Purple Kush Joint
     {
         destroy PurpleKush,
-        RollingPapers=1,
+        SingleRollingPaper=1,
 
         Result:PoorlyRolledPurpleKushJoint,
         Time:160.0,
@@ -123,7 +123,7 @@ module Base
     recipe Poorly Rolled Northern Lights Joint
     {
         destroy NorthernLights,
-        RollingPapers=1,
+        SingleRollingPaper=1,
 
         Result:PoorlyRolledNorthernLightsJoint,
         Time:160.0,
@@ -133,7 +133,7 @@ module Base
     recipe Poorly Rolled Bruce Banner Joint
     {
         destroy BruceBanner,
-        RollingPapers=1,
+        SingleRollingPaper=1,
 
         Result:PoorlyRolledBruceBannerJoint,
         Time:160.0,
@@ -143,7 +143,7 @@ module Base
     recipe Poorly Rolled Pineapple Express Joint
     {
         destroy PineappleExpress,
-        RollingPapers=1,
+        SingleRollingPaper=1,
 
         Result:PoorlyRolledPineappleExpressJoint,
         Time:160.0,
@@ -152,7 +152,7 @@ module Base
     }
     recipe Green Crack Joint
     {
-        destroy RollingPapers,
+        destroy SingleRollingPaper,
         GreenCrack=2,
 
         Result:GreenCrackJoint,
@@ -162,7 +162,7 @@ module Base
     }
     recipe Purple Kush Joint
     {
-        destroy RollingPapers,
+        destroy SingleRollingPaper,
         PurpleKush=2,
 
         Result:PurpleKushJoint,
@@ -172,7 +172,7 @@ module Base
     }
     recipe Northern Lights Joint
     {
-        destroy RollingPapers,
+        destroy SingleRollingPaper,
         NorthernLights=2,
 
         Result:NorthernLightsJoint,
@@ -182,7 +182,7 @@ module Base
     }
     recipe Bruce Banner Joint
     {
-        destroy RollingPapers,
+        destroy SingleRollingPaper,
         BruceBanner=2,
 
         Result:BruseBannerJoint,
@@ -192,7 +192,7 @@ module Base
     }
     recipe Pineapple Express Joint
     {
-        destroy RollingPapers,
+        destroy SingleRollingPaper,
         PineappleExpress=2,
 
         Result:PineappleExpressJoint,
@@ -218,7 +218,7 @@ module Base
         Result:PurpleKushBlunt,
         Time:250.0,
         NeedToBeLearn:FALSE,
-em.GreenCrack        Category:Health,
+        Category:Health,
     }
     recipe Northern Lights Blunt
     {
@@ -249,5 +249,13 @@ em.GreenCrack        Category:Health,
         Time:250.0,
         NeedToBeLearn:FALSE,
         Category:Health,
+    }
+    recipe Open Pack Of Rolling Papers
+    {
+        destroy PackOfRollingPapers,
+
+        Result:SingleRollingPaper=6,
+        Time:200.0,
+        NeedToBeLearn:FALSE,
     }
 }

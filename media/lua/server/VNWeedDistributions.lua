@@ -33,6 +33,12 @@ table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.Grinder");
 table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
 
+table.insert(SuburbsDistributions["all"]["postbox"].items, "DabRigAttachment");
+table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["postbox"].items, "DabRig");
+table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+
 table.insert(SuburbsDistributions["all"]["crate"].items, "JunkItem.BluntWrap");
 table.insert(SuburbsDistributions["all"]["crate"].items, 1);
 
@@ -64,6 +70,12 @@ table.insert(SuburbsDistributions["all"]["crate"].items, "JunkItem.HotWeedPress"
 table.insert(SuburbsDistributions["all"]["crate"].items, 1);
 
 table.insert(SuburbsDistributions["all"]["crate"].items, "JunkItem.Grinder");
+table.insert(SuburbsDistributions["all"]["crate"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["crate"].items, "DabRigAttachment");
+table.insert(SuburbsDistributions["all"]["crate"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["crate"].items, "DabRig");
 table.insert(SuburbsDistributions["all"]["crate"].items, 1);
 
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "JunkItem.BluntWrap");
@@ -99,6 +111,12 @@ table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 1);
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "JunkItem.Grinder");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 1);
 
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "DabRigAttachment");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "DabRig");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 1);
+
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "JunkItem.BruceBanner");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 1);
 
@@ -130,4 +148,10 @@ table.insert(SuburbsDistributions["all"]["inventorymale"].items, "JunkItem.HotWe
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 1);
 
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "JunkItem.Grinder");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "DabRigAttachment");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 1);
+
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "DabRig");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 1);
